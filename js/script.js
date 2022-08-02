@@ -8,6 +8,7 @@ var locationData = document.getElementById("location-data");
 var timezoneData = document.getElementById("timezone-data");
 var ispData = document.getElementById("isp-data");
 
+const mapContainer = document.querySelector(".map-container");
 var latitude;
 var longitude;
 
