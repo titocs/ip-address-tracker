@@ -19,6 +19,7 @@ buttonSubmit.addEventListener("click", function(e){
     // cek kesiapan ajax
     xhr.onreadystatechange = function(){
         if(xhr.readyState == 4 && xhr.status == 200){
+            mapContainer.innerHTML = `<div id="map" class="h-screen lg:h-[calc(100vh-224px)]"></div>`;
             responseData = xhr.responseText;
             geoLocationData = JSON.parse(responseData);
             
