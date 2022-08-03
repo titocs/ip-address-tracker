@@ -16,6 +16,10 @@ buttonSubmit.addEventListener("click", function(e){
     e.preventDefault();
     var ipAddressValue = ipAddress.value;
     var xhr = new XMLHttpRequest();
+    if(ipAddressValue.length === 0){
+        alert("Please insert IP Address first");
+        return;
+    }
 
     // cek kesiapan ajax
     xhr.onreadystatechange = function(){
